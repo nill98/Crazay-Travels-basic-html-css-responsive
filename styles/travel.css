@@ -1,0 +1,39 @@
+
+/* Shared style */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --primary-color: #FF5400;
+    --secondary-color: #131318;
+    --description-color: #5A5A5D;
+    --white-color: #ffff;
+    --text-color: #5A5A5D;
+    --light-text-color: #777777;
+    --border-color: #E0E0E0;
+
+    /* Typography */
+    --font-family: "Mulish", serif;
+    --heading-font-weight: 700;
+    --text-font-weight: 400;
+
+    /* Spacing */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+
+    /* Border radius */
+    --border-radius: 4px;
+
+    /* Shadows */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
