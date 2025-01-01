@@ -172,9 +172,11 @@ input{
 .tour-container{
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 30px;
 }
-
+.tour-content{
+    padding-right: 70px;
+}
 .tour-content .section-title{
     margin-bottom: 30px;
 }
@@ -183,7 +185,7 @@ input{
 }
 .bullet-point{
     padding-left: 10px;
-    padding-right: 90px;
+    padding-right: 30px;
 }
 
 
@@ -230,5 +232,9 @@ input{
         width: 300px;
         justify-content: space-between;
         padding: 5px 10px;
+    }
+    .tour-container{
+        padding:20px;
+        flex-direction: column;
     }
 }
