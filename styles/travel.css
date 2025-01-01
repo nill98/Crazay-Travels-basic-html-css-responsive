@@ -63,7 +63,9 @@ nav{
     align-items: center;
     margin-bottom: 45px;
 }
-
+nav .menu{
+    display: none;
+}
 .logo{
     display: flex;
 }
@@ -98,7 +100,7 @@ nav li:last-child{
 
 .banner{
     /* border: #131318 solid 1px; */
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.0)), url('/Images/Group\ 13\ \(1\)\ \(1\).png');
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.0)), url('/Images/Group\ 13\ \(1\)\ \(1\).png');
     background-size: cover;
     width: 100%;
     height: 500px; 
@@ -123,21 +125,20 @@ nav li:last-child{
 }
 
 .banner-search{
-    width: 800px; 
+    /* width: 800px;  */
     height: 84px; 
     background: rgba(255, 255, 255, 0.3); 
     border-radius: 8px; 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin: 70px auto;
+    margin: 70px 185px;
 }
 .input-wrapper{
     width: 174px;
     height: 52px;
     background-color: white;
-    margin-right: 20px;
     border-radius: 8px;
     display: flex;   
     align-items: center;
@@ -176,14 +177,16 @@ input{
     }
     nav ul{
         display: none;
-
+    }
+    nav .menu{
+        display: block;
     }
     
     .banner-content {
-        width: 350px;
+        width: 345px;
         text-align: center;
-        padding-top: 50px;
-        margin: 0 auto;
+        padding-top: 30px;
+        
     }
     .banner-content h2{
         font-size: 2rem;
@@ -191,6 +194,13 @@ input{
     }
     .banner-search{
         width: 340px;
-        height: 340px;
+        height: 320px;
+        margin: 20px auto;
+        flex-direction: column;
+    }
+    .banner-search .input-wrapper, .banner-search .btn{
+        width: 300px;
+        justify-content: space-between;
+        padding: 5px 10px;
     }
 }
